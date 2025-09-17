@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 - Media</title>
+</head>
+<body>
+  <h1>Peça a idade de 5 pessoas, calcule a média e diga se a turma é: 
+• Jovem (média menor que 18") 
+• Adulta (média entre 18 e 59) 
+• Idosa (média ≥ 60) </h1>
+    <script>
+
+
+let a = parseInt(prompt("Digite a sua idade:"));
+let b = parseInt(prompt("Digite a sua idade:"));
+let c = parseInt(prompt("Digite a sua idade:"));
+let d = parseInt(prompt("Digite a sua idade:"));
+let e = parseInt(prompt("Digite a sua idade:"));
+
+let media = (a + b + c + d + e) / 5; 
+
+if (media <= 18) {
+  alert("Jovem");
+} else if (media >= 60) { 
+  alert("Idosa");
+} else {
+  alert("Adulta");
+}
+    </script>
+</body>
+</html>

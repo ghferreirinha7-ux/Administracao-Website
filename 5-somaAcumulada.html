@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 - soma Acumulada</title>
+  </head>
+  <body>
+    <h1>
+      Peça números até o usuário digitar -1. Ao final, mostre a soma total.
+    </h1>
+    <script>
+     
+  let soma = 0;
+  let numero = parseInt(prompt("Digite um numero (ou -1 para sair): "))
+
+      while (numero !== -1) {
+        soma += numero;
+      numero = parseInt(prompt("Digite outro numero (ou -1 para sair): "))
+      }
+      alert(soma);
+        
+        
+    </script>
+  </body>
+</html>

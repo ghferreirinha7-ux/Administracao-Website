@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 - Tabuada formatada</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Peça um número n e mostre sua tabuada de 1 a 10 no console.</h1>
+    <script>
+      let n = Number(prompt("Digite um numero: "));
+      for (let i = 1; i <= 10; i++) {
+       let resultado = (n / i);
+        alert(`${n} / ${i} = ${resultado.toFixed(5)}`);
+      }
+    </script>
+  </body>
+</html>

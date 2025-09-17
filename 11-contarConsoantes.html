@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11 - contar consoantes</title>
+  </head>
+  <body>
+    <h1>Peça uma palavra e mostre quantas consoantes ela possui.</h1>
+    <script>
+      let palavra = String(prompt("Digite uma palavra"));
+      palavra = palavra.toLowerCase();
+      const vogal = ["a", "e", "i", "o", "u"];
+      let contagem = 0;
+
+      for (let letra of palavra) {
+        if (!vogal.includes(letra)) {
+          contagem++;
+        }
+      }
+      alert(`A palavra  ${palavra} possui  ${contagem} Consoantes`);
+    </script>
+  </body>
+</html>

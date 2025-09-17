@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7 - lista de compras</title>
+  </head>
+  <script>
+    let compras = [];
+    for (let i = 0; i < 5; i++) {
+      compras.push(prompt(`Digite o produto ${i + 1}: `));
+    }
+    alert("Sua lista está no console");
+    compras.forEach((item) => console.log("- " + item));
+  </script>
+  <body>
+    <h1>
+      Peça ao usuário para digitar 5 produtos e armazene em um array. Depois
+      mostre todos em uma lista organizada (um por linha)
+    </h1>
+  </body>
+</html>

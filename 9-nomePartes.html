@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9 - nome em partes</title>
+  </head>
+  <body>
+    <script>
+      const nome = prompt("Digite seu nome completo:");
+      alert("Maiúsculas: " + nome.toUpperCase());
+
+      const partes = nome.trim().split(/\s+/);
+      alert("Primeiro nome: "  + partes[0] + "  " + 'último nome: ' + partes[partes.length - 1]);
+
+
+      const letras = nome.replace(/\s+/g, "");
+      alert("Quantidade de letras: " + letras.length);
+    </script>
+
+    <h1>
+      Peça o nome completo do usuário. • Mostre o nome em maiúsculas. • Mostre o
+      primeiro nome. • Mostre quantas letras tem.
+    </h1>
+  </body>
+</html>
